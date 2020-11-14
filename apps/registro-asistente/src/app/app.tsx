@@ -4,7 +4,9 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 
 import './app.scss';
+
 import Home from './home/home';
+import Registro from './registro/registro';
 
 
 export const App = () => {
@@ -18,7 +20,7 @@ export const App = () => {
       <div className="app">
         <div className="app-content">
           <Route path="/" exact component={Home} />
-          <Route path="/registro" exact component={Home} />
+          <Route path="/registro" exact component={Registro} />
         </div>
       </div>
     </BrowserRouter>
